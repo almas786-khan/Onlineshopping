@@ -1,0 +1,69 @@
+<!--Assignment4
+Created By: Almas Khan
+Created On: August 8, 2016 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Online Store</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="validateForm.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="jquery.slides.min.js"></script>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<div class="container"
+		<div id="slides">
+			<img src="images/1.jpg">
+			<img src="images/2.jpg">
+			<img src="images/3.jpg">
+			<img src="images/4.jpg">
+			<img src="images/5.jpg">
+		</div>
+	</div>	
+
+  <h1 align="center"><u>Accessory Store</u></h1>
+    
+  <div class="container">
+    <form name="myForm" onsubmit="return validateForm();" method="post" align="center" action="shopping.php">
+		<fieldset>
+			<legend>Personal Info:</legend>
+				<p id="error"></p>
+				<label class="req">Name:</label><input id="textbox" type="text" name="name"><br>
+				<label class="req">Date Of Birth:</label> <input id="textbox" type="date" name="dob"><br>
+				<label class="req">Email:</label> <input id="textbox" type="text" placeholder="eg. abc@xyz.com" name="email"><br>
+				<label class="req">Address: </label><input id="textbox" type="text" name="address"><br>
+				<label class="req">City:</label> <input id="textbox" type="text" name="city"><br>
+				<label class="req">Postal Code:</label> <input id="textbox" type="text" placeholder="eg. L9T0Z8" name="pCode" maxlength="6"><br>
+				
+				<label>Province:</label>
+				<input type="radio" name ="provinceRadio" value="Alberta">Alberta</option><br>
+				<input type="radio" name ="provinceRadio" value="British Columbia">British Columbia</option><br>
+				<input type="radio" name ="provinceRadio" value="Manitoba">Manitoba</option><br>
+				<input type="radio" name ="provinceRadio" value="New Brunswick" checked>New Brunswick</option><br>
+				<input type="radio" name ="provinceRadio" value="NewFoundland">NewFoundland</option><br>
+				<input type="radio" name ="provinceRadio" value="Northwest Territories">Northwest Territories</option><br>
+				<input type="radio" name ="provinceRadio" value="Nova Scotia">Nova Scotia</option><br>
+				<input type="radio" name ="provinceRadio" value="Nunavut">Nunavut</option><br>
+				<input type="radio" name ="provinceRadio" value="Ontario" checked>Ontario</option><br>
+				<input type="radio" name ="provinceRadio" value="Quebec">Quebec</option><br>
+				<input type="radio" name ="provinceRadio" value="Saskatchewan">Saskatchewan</option><br>
+				<input type="radio" name ="provinceRadio" value="Yukon">Yukon</option><br>
+		</fieldset>
+		<fieldset>
+			<legend>Products we provide</legend>
+				<p><img src= "images/6.jpg"><br>$10 (CAD)</p>
+				<label>Sunglass:</label><input type="text" maxlength="1" placeholder="Input the quantity in numbers" name="sunglassQuantity"><br>
+				<p><img src= "images/7.jpg"><br>$20 (CAD)</p>
+				<label>Bag:</label><input type="text" maxlength="1" placeholder="Input the quantity in numbers" name="bagQuantity">
+				<br>
+        </fieldset>
+        <br>
+        <button type="submit" value="Checkout">Checkout</button>&nbsp;&nbsp;
+		<button type="reset" value="Reset">Reset</button>
+    </form>
+  </div>
+</body>
+</html>
